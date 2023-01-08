@@ -1,0 +1,5 @@
+nasm -f elf64 helloWorld.s
+ld -o helloWorld helloWorld.o
+
+objdump -M intel -d helloWorld
+objdump -M intel -sj .data helloWorld

@@ -1,9 +1,8 @@
 global  _start
-extern  printf, scanf
+extern  printf
 
 section .data
     outFormat db  "It's %s", 0x0a, 0x00
-    inFormat db  "%d", 0x00
     message db "Aligned!", 0x0a
 
 section .text
